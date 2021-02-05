@@ -1,0 +1,30 @@
+favicon: /favicon.ico
+avatar: /favicon.png
+katex: false
+
+menus:
+  - name: 首页
+    link: /
+  - name: 归档
+    link: /archives/
+  - name: 标签
+    link: /tags/
+  - name: 友链
+    link: /friends/
+  - name: 关于
+    link: /about/
+disqus:
+  enable: false
+  shortname: 'Your shortname here'
+  api: 'Your api here'
+  apikey: 'Your api key here'
+  admin: 'Your disqus username here'
+google_analytics:
+  enable: false
+  id: UA-163290903-2
+footer: |
+  Footer HTML
+friends:
+  - name: "宝硕博客"
+    link: https://blog.baoshuo.ren/
+    logo: https://blog.baoshuo.ren/favicon_128x128.png

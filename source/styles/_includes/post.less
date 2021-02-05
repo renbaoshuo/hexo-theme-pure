@@ -1,0 +1,308 @@
+// Post container
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    flex: 1;
+
+    .post-detail {
+        flex: 1;
+        padding: 24px 32px;
+        width: 1000px;
+        border-radius: 5px;
+
+        .post-title {
+            font-size: 26px;
+            text-align: center;
+            padding: 24px;
+            font-weight: normal;
+        }
+
+        .post-info {
+            text-align: center;
+            font-size: 12px;
+            padding-bottom: 24px;
+
+            .post-tag {
+                padding: 8px;
+            }
+        }
+
+        .post-toc {
+            margin-bottom: 30px;
+
+            h2 {
+                display: inline-block;
+                background: linear-gradient(180deg, transparent 75%, rgba(139, 149, 159, 0.4) 0) !important;
+            }
+
+            ul {
+                margin: 0px;
+            }
+
+            .markdownIt-TOC {
+                padding: 0px;
+
+                li {
+                    list-style: none;
+                    margin: 0px;
+
+                    ul li {
+                        list-style-type: disc;
+                        margin: 0px;
+
+                        a {
+                            color: var(--content-first) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .post-content {
+            margin-top: 30px;
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                display: table !important;
+            }
+
+            h2,
+            h3 {
+                display: inline-block;
+                color: var(--content-first) !important;
+                position: relative !important;
+                background: linear-gradient(180deg, transparent 75%, var(--accent-second) 0) !important;
+            }
+        }
+
+        @media (max-width: 992px) {
+            width: 100%;
+            margin-top: 20px;
+
+            .post-title {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    details {
+        background: var(--accent-second);
+        border-radius: 5px;
+        padding: 10px 20px;
+
+        summary {
+            user-select: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: var(--accent-second);
+            margin: -10px -20px;
+        }
+
+        &[open] summary {
+            border-radius: 5px 5px 0px 0px;
+            margin: -10px -20px 15px -20px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+.gt-a-link {
+    color: var(--content-first) !important;
+    position: relative !important;
+    background: linear-gradient(180deg, transparent 75%, #4dabf766 0) !important;
+}
+
+.gt-post-content {
+    word-break: normal;
+    word-wrap: break-word;
+
+    a {
+        &,
+        & code {
+            color: var(--accent-first) !important;
+            transition: all 0.3s;
+        }
+
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+
+    .post-toc + hr {
+        margin-bottom: calc(1rem + 18px);
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        border-radius: 3px;
+        margin: 18px auto;
+    }
+
+    p {
+        line-height: 1.725;
+        margin-bottom: 18px;
+        font-size: 16px;
+        letter-spacing: 1.0382px;
+    }
+
+    pre {
+        margin-bottom: 18px;
+    }
+
+    blockquote {
+        padding: 16px;
+        border: 0;
+        border-left: 4px;
+        border-style: solid;
+        margin-bottom: 16px;
+        background: var(--accent-second) !important;
+        border-color: var(--accent-first) !important;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 1rem 0;
+        overflow-x: auto;
+        display: table;
+        width: 100%;
+
+        thead th {
+            text-align: left;
+        }
+
+        tr {
+            border-top: 1px solid var(--border);
+        }
+
+        td,
+        th {
+            border: 1px solid var(--border);
+            padding: 0.6em 1em;
+        }
+    }
+
+    ul,
+    ol {
+        padding-left: 20px;
+        line-height: 1.725;
+        margin-bottom: 16px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 18px;
+        padding-top: 14px;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    pre {
+        margin-bottom: 18px;
+        margin-right: 32px;
+
+        & > code {
+            letter-spacing: 0px;
+            font-size: 14px;
+            font-family: 'Roboto Mono', Consolas, Menlo, Monaco, 'Source Code Pro', 'Courier New', monospace;
+            padding: 1em;
+            border-radius: 5px;
+            line-height: 1.375;
+            position: relative;
+            width: 100%;
+            overflow: scroll;
+            display: block;
+        }
+    }
+
+    p code,
+    li code,
+    table code {
+        letter-spacing: 0px;
+        color: var(--content-first);
+        font-family: 'Roboto Mono', Consolas, Menlo, Monaco, 'Source Code Pro', 'Courier New', monospace;
+        padding: 0.2em 0.4em;
+        margin: 0;
+        font-size: 85%;
+        background-color: #1b1f230d;
+        border-radius: 6px;
+        word-break: break-all;
+    }
+}
+
+.post-detail {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+}
+
+.next-prev-post {
+    text-align: center;
+    padding: 24px 32px;
+
+    .next-post {
+        .next {
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+
+        .post-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+
+    .prev-post {
+        .prev {
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+
+        .post-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}

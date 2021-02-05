@@ -1,0 +1,16 @@
+<% if(theme.disqus.enable) { %>
+    <div id="disqus_thread" class="gt-c-content-color-first"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqusjs.css">
+    <script src="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqus.js"></script>
+    <script>
+        var dsqjs = new DisqusJS({
+            shortname: '<%= theme.disqus.shortname %>',
+            api: '<%= theme.disqus.api %>',
+            apikey: '<%= theme.disqus.apikey %>',
+            identifier: location.pathname,
+            title: '<%= page.title %>',
+            siteName: '<%= config.title %>',
+            admin: '<%= theme.disqus.admin %>'
+        });
+    </script>
+<% } %>

@@ -1,0 +1,6 @@
+<div class="tags-container">
+    <% site.tags.forEach((tag) => { %>
+        <a class="tag gt-c-content-color-first gt-a-link" 
+            href="<%- url_for(tag.path) %>">#<%= tag.name %></a>
+    <% }); %>
+</div>

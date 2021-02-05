@@ -1,0 +1,32 @@
+<div class="current-tag-container">
+    <h1 class="title gt-c-content-color-first">含有 <%= page.tag %> 标签的文章</h1>
+</div>
+<div class="post-list-container">
+    <div class="post-inner">
+        <% page.posts.forEach(function(post) { %>
+            <% if(post.published) { %>
+                <article class="post gt-bg-theme-color-second">
+                    <div class="post-left">
+                        <a href="<%- url_for(post.path) %>">
+                            <span class="post-title gt-c-content-color-first"><%= post.title %></span>
+                        </a>
+                        <div class="gt-post-content post-abstract gt-c-content-color-second">
+                            <p><%= post.excerpt.replace(/(<(\/?)(\w+)[^>]*>)|(<!--[\s\S]*?-->)/g ,'').replace(/\s+/g,' ') %></p>
+                        </div>
+                        <div class="post-info">
+                            <span>
+                                <time class="post-time gt-c-content-color-first">
+                                    · <%- date(post.date) %> ·
+                                </time>
+                                <% post.tags.forEach((tag) => { %>
+                                    <a href="<%= url_for(tag.path) %>" class="post-tag">
+                                        #<%= tag.name %></a>
+                                <% }); %>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            <% } %>
+        <% }); %>
+    </div>
+</div>

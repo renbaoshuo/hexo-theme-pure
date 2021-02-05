@@ -1,0 +1,44 @@
+<div class="archives-container gt-bg-theme-color-second">
+    <div class="gt-post-content">
+        <% 
+        if (!page.year) { 
+            var years = [];
+            page.posts.forEach((post) => {
+                const post_year = post.date.year();
+                if(!years.includes(post_year)) {
+                    years.push(post_year);
+                }
+            });
+        } else {
+            var years = [ page.year ];
+        }
+        %>
+        <% years.forEach((year) => { %>
+            <h2 id="year-<%- year %>" class="year gt-c-content-color-first"><%- year %></h2>
+            <% if(page.month) { %>
+                <h3 id="year-<%- year %>-month-<%- page.month %>"><%- page.month %> 月</h3>
+            <% } %>
+            <% page.posts.forEach((post) => { %>
+                <% if(post.date.year() == year) { %>
+                    <div class="post" style="margin-left: 15px;">
+                        <a href="<%- url_for(post.path) %>">
+                            <div class="post-title gt-c-content-color-first">
+                                <small><b><%= date(post.date) %></b></small>
+                                <div class="archives-post-title"><%= post.title %></div>
+                            </div>
+                        </a>
+                    </div>
+                <% } %>
+            <% }); %>
+        <% }); %>
+    </div>
+</div>
+
+<div class="pagination-container">
+    <% if (page.prev) { %>
+        <a href="<%- url_for(page.prev_link) %>" class="prev-page gt-a-link">上一页</a>
+    <% } %>
+    <% if (page.next) { %>
+        <a href="<%- url_for(page.next_link) %>" class="prev-page gt-a-link">下一页</a>
+    <% } %>
+</div>

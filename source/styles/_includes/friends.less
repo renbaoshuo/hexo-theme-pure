@@ -1,0 +1,45 @@
+.friend-box {
+    float: left;
+    max-width: calc(50% - 20px);
+    min-width: calc(50% - 20px);
+    margin: 15px 10px;
+    background-color: rgba(20, 153, 196, 0.125);
+    padding: 15px;
+    border-radius: 15px;
+
+    img.friend-avatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 50% !important;
+        float: left;
+        margin: 0 15px 0 0 !important;
+    }
+
+    .friend-info {
+        height: 70px;
+        overflow: hidden;
+        line-height: 24px;
+        padding-left: 30px;
+        font-size: 14px;
+
+        a {
+            text-decoration: none !important;
+            font-size: 18px;
+            background: linear-gradient(180deg, transparent 75%, rgba(116, 192, 252, 0.4) 0);
+            margin-bottom: 10px;
+        }
+
+        .friend-info-description {
+            margin-top: 10px;
+
+            @media (max-width: 465px) {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 993px) {
+        max-width: 90% !important;
+        min-width: 90% !important;
+    }
+}
