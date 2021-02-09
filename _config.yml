@@ -25,6 +25,7 @@ google_analytics:
 footer: |
   Footer HTML
 friends:
-  - name: "宝硕博客"
+  - name: 宝硕博客
     link: https://blog.baoshuo.ren/
     logo: https://blog.baoshuo.ren/favicon_128x128.png
+    description: 学习，就是发现自己越来越菜的过程。
