@@ -16,7 +16,7 @@
         <div class="navbar-nav mr-auto" style="text-align: center; ">
             <% theme.menus.forEach(function(menu) { %>
                 <div class="nav-item">
-                    <a href="<%= menu.link %>" class="menu gt-a-link" target="<%- menu.target ? menu.target : "_self" %>"><%= menu.name %></a>
+                    <a href="<%= url_for(menu.link) %>" class="menu gt-a-link" target="<%- menu.target ? menu.target : "_self" %>"><%= menu.name %></a>
                 </div>
             <% }); %>
         </div>
