@@ -29,6 +29,12 @@ jobs:
       - run: npm i hexo-cli -g
       - run: npm i
       - run: npm i hexo-renderer-less
+      - name: Add Friends Page
+        run: |
+          mkdir -p source/friends && touch source/friends/index.md
+          echo "---\nlayout: friends\ntitle: 友情链接\n---\n\n请前往 [renbaoshuo/Friends](https://github.com/renbaoshuo/Friends) 申请友链。\n" > source/friends/index.md
+      - name: Site Config
+        run: rm _config.yml && cp themes/pure/_config.example.yml _config.yml
       - name: Generate Site Files
         run: hexo g
       - name: Deploy
