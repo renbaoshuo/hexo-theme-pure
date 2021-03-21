@@ -11,8 +11,6 @@ menus:
     link: /tags/
   - name: 友链
     link: /friends/
-  - name: 关于
-    link: /about/
 disqus:
   enable: false
   shortname: 'Your shortname here'
@@ -21,11 +19,11 @@ disqus:
   admin: 'Your disqus username here'
 google_analytics:
   enable: false
-  id: UA-163290903-2
+  id: UA-xxxxxxxxx-x
 footer: |
   Footer HTML
 friends:
   - name: 宝硕博客
     link: https://blog.baoshuo.ren/
-    logo: https://blog.baoshuo.ren/favicon_128x128.png
+    logo: https://cdn.jsdelivr.net/npm/bsi@0.0.2/favicon/128x128.png
     description: 学习，就是发现自己越来越菜的过程。
