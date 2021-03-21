@@ -22,15 +22,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm set audit false && node -v && npm -v
-      - name: Checkout hexojs/hexo-theme-unit-test
-        uses: actions/checkout@v2
-        with:
-          repository: hexojs/hexo-theme-unit-test
-      - name: Checkout renbaoshuo/hexo-theme-pure
-        uses: actions/checkout@v2
-        with:
-          repository: renbaoshuo/hexo-theme-pure
-          path: themes/pure
+      - name: Clone hexojs/hexo-theme-unit-test
+        run: git clone https://github.com/hexojs/hexo-theme-unit-test .
+      - name: Clone renbaoshuo/hexo-theme-pure
+        run: git clone https://github.com/renbaoshuo/hexo-theme-pure.git themes/pure
       - run: npm i hexo-cli -g
       - run: npm i
       - run: npm i hexo-renderer-less
