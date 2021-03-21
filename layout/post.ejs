@@ -1,14 +1,16 @@
 <div class="post-container">
     <div class="post-detail gt-bg-theme-color-second gt-c-content-color-first">
         <article class="gt-post-content">
-            <h1 class="post-title"><%= page.title %></h1>
+            <h1 class="post-title"><%= page.title || "(无标题)" %></h1>
             <div class="post-info">
                 <time class="post-time gt-c-content-color-first">
                     · <%= date(page.date) %> ·</time>
-                <% page.tags.forEach((tag) => { %>
-                    <a href="<%= url_for(tag.path) %>" class="post-tag">
-                        #<%= tag.name %></a>
-                <% }); %>
+                <% if(page.tags) %>
+                    <% page.tags.forEach((tag) => { %>
+                        <a href="<%= url_for(tag.path) %>" class="post-tag">
+                            #<%= tag.name %></a>
+                    <% }); %>
+                <% } %>
             </div>
             <hr>
             <div class="post-content gt-c-content-color-first">
