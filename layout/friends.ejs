@@ -28,5 +28,7 @@
             </div>
         </article>
     </div>
-    <%- partial("_includes/disqus.ejs") %>
+    <% if(theme.disqus.enable) { %>
+        <%- partial("_includes/disqus.ejs") %>
+    <% } %>
 </div>
