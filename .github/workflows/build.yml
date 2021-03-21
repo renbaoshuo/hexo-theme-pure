@@ -1,0 +1,47 @@
+name: Build Theme Demo
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches: 
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:
+          - 13.x
+    steps:
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm set audit false && node -v && npm -v
+      - name: Checkout hexojs/hexo-theme-unit-test
+        uses: actions/checkout@v2
+        with:
+          repository: hexojs/hexo-theme-unit-test
+      - name: Checkout renbaoshuo/hexo-theme-pure
+        uses: actions/checkout@v2
+        with:
+          repository: renbaoshuo/hexo-theme-pure
+          path: themes/pure
+      - run: npm i hexo-cli -g
+      - run: npm i
+      - run: npm i hexo-renderer-less
+      - name: Generate Site Files
+        run: hexo g
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./public
+        with:
+          username: ${{ secrets.GIT_USERNAME }}
+          useremail: ${{ secrets.GIT_EMAIL }}
