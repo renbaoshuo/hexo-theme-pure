@@ -14,6 +14,7 @@ This theme is transplanted from [imhanjie/gridea-theme-pure](https://github.com/
 ## Demo
 
 + [Baoshuo's Blog](https://blog.baoshuo.ren)
++ [Hexo Theme Unit Test of Theme Pure](https://renbaoshuo.github.io/hexo-theme-pure)
 
 ## Installation
 
