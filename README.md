@@ -9,7 +9,7 @@
 
 ![image](https://user-images.githubusercontent.com/47095648/111874137-bb164800-89ce-11eb-94fc-0d7e6d17718a.png)
 
-This theme is transplanted from [imhanjie/gridea-theme-pure](https://github.com/imhanjie/gridea-theme-pure) and has been approved by the original author.
+*This theme is transplanted from [imhanjie/gridea-theme-pure](https://github.com/imhanjie/gridea-theme-pure) and has been approved by the original author.*
 
 ## Demo
 
@@ -23,9 +23,6 @@ You need to switch to the directory where the site is located before performing 
 ```bash
 npm install hexo-renderer-ejs hexo-renderer-less --save
 git clone https://github.com/renbaoshuo/hexo-theme-pure.git themes/pure
-cd themes/pure
-npm install
-cd ../..
 ```
 
 ## Settings
