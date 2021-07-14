@@ -9,6 +9,8 @@
 
 ![image](https://user-images.githubusercontent.com/47095648/111874137-bb164800-89ce-11eb-94fc-0d7e6d17718a.png)
 
+English | [简体中文](/README.zh_CN.md)
+
 *This theme is transplanted from [imhanjie/gridea-theme-pure](https://github.com/imhanjie/gridea-theme-pure) and has been approved by the original author.*
 
 ## Demo
