@@ -24,13 +24,6 @@
   },
   "homepage": "https://github.com/renbaoshuo/hexo-theme-pure#readme",
   "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-babel": "^8.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-header": "^2.0.9",
-    "gulp-less": "^4.0.1",
-    "gulp-uglify": "^3.0.2",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-less": "^2.0.2"
   }
