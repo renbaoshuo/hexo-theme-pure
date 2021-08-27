@@ -15,7 +15,7 @@
 
 ## 示例
 
-+ [宝硕博客](https://blog.baoshuo.ren)<sup>（定制版）</sup>
++ [宝硕博客](https://blog.baoshuo.ren)（修改版）
 + [Hexo 主题单元测试 - Pure](https://renbaoshuo.github.io/hexo-theme-pure)
 
 ## 安装
