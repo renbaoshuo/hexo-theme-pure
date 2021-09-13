@@ -49,7 +49,7 @@ git clone https://github.com/renbaoshuo/hexo-theme-pure.git themes/pure
   - `repository`: 你的 GitHub 评论仓库。
   - `owner`: 你的 GitHub 用户名。
 + `google_analytics`：谷歌站点统计设置
-  - `enable`：是否开启谷歌站点统计。（布尔值默认：`false`）
+  - `enable`：是否开启谷歌站点统计。（布尔值，默认：`false`）
   - `id`：谷歌站点统计 ID 。
 + `footer`：页脚显示的内容。
 + `friends`：友情链接
