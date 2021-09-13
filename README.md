@@ -42,6 +42,12 @@ git clone https://github.com/renbaoshuo/hexo-theme-pure.git themes/pure
   - `api`: Your disqus api.
   - `apikey`: Your disqus api key.
   - `admin`: Your disqus username.
++ `gitalk`: [Gitalk](https://github.com/gitalk/gitalk) Settings
+  - `enable`: Whether to enable Gitalk. (Boolean, default: `false`)
+  - `clientId`: Your GitHub oauth app client id
+  - `clientSecret`:  Your GitHub oauth app client secret
+  - `repository`: Your GitHub comment repository
+  - `owner`: Your GitHub username
 + `google_analytics`: Google Analytics Settings
   - `enable`: Whether to enable Google Analytics. (Boolean, default: `false`)
   - `id`: Google Analytics tracker id.

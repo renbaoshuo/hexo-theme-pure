@@ -17,6 +17,12 @@ disqus:
   api: 'Your api here'
   apikey: 'Your api key here'
   admin: 'Your disqus username here'
+gitalk:
+  enable: false
+  clientId: 'Your Client Id here'
+  clientSecret: 'Your Client Secret here'
+  repository: 'Your Comment Repository here'
+  owner: 'Your github username here'
 google_analytics:
   enable: false
   id: UA-xxxxxxxxx-x

@@ -42,6 +42,12 @@ git clone https://github.com/renbaoshuo/hexo-theme-pure.git themes/pure
   - `api`：Disqus API endpoint 。
   - `apikey`：Disqus API Key 。
   - `admin`：管理员的 Disqus 用户名。
++ `gitalk`: [Gitalk](https://github.com/gitalk/gitalk) 配置
+  - `enable`: 是否开启 Gitalk 。
+  - `clientId`: 你的 GitHub Oauth App Client Id 。
+  - `clientSecret`: 你的 GitHub Oauth App Client Secret 。
+  - `repository`: 你的 GitHub 评论仓库。
+  - `owner`: 你的 GitHub 用户名。
 + `google_analytics`：谷歌站点统计设置
   - `enable`：是否开启谷歌站点统计。（布尔值默认：`false`）
   - `id`：谷歌站点统计 ID 。
