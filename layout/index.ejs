@@ -7,7 +7,7 @@
                         <span class="sticky-top-flag gt-bg-accent-color-first">置顶</span>
                     <% } %>
                     <a href="<%- url_for(post.path) %>">
-                        <span class="post-title gt-c-content-color-first"><%= post.title %></span>
+                        <span class="post-title gt-c-content-color-first"><%= post.title || "(无标题)" %></span>
                     </a>
                     <div class="gt-post-content post-abstract gt-c-content-color-second">
                         <p><%= post.excerpt.replace(/(<(\/?)(\w+)[^>]*>)|(<!--[\s\S]*?-->)/g ,'').replace(/\s+/g,' ') %></p>
