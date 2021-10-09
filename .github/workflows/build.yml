@@ -34,6 +34,11 @@ jobs:
           mkdir -p source/friends && touch source/friends/index.md
           echo -e "---\nlayout: friends\ntitle: 友情链接\n---\n\n请前往 [renbaoshuo/Friends](https://github.com/renbaoshuo/Friends) 申请友链。\n" > source/friends/index.md
           cat source/friends/index.md
+      - name: Add Tags Page
+        run: |
+          mkdir -p source/tags && touch source/tags/index.md
+          echo -e "---\nlayout: tags\ntitle: 标签\n---\n" > source/friends/index.md
+          cat source/tags/index.md
       - name: Site Config
         run: rm _config.yml && cp themes/pure/_config.example.yml _config.yml
       - name: Generate Site Files
