@@ -24,7 +24,7 @@
                         <a href="<%- url_for(post.path) %>">
                             <div class="post-title gt-c-content-color-first">
                                 <small><b><%= date(post.date) %></b></small>
-                                <div class="archives-post-title"><%= post.title %></div>
+                                <div class="archives-post-title"><%= post.title || '(无标题)' %></div>
                             </div>
                         </a>
                     </div>
