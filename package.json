@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-pure",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modern and simple theme for Hexo.",
   "scripts": {
     "build:styles": "./node_modules/.bin/gulp"
