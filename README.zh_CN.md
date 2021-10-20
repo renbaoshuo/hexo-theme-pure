@@ -41,6 +41,8 @@ npm install hexo-theme-pure
 + `favicon`：显示在浏览器选项卡和书签中的站点徽标。（字符串，默认：`/favicon.ico`）
 + `avatar`：网站页眉处显示的 Logo 。（字符串，默认：`/favicon.png`）
 + `katex`：是否加载 [KaTeX](https://katex.org) 的 CSS 文件. （布尔值，默认：`false`）
++ `force_https`：是否强制全局 HTTPS。（布尔值，默认：`false`）
++ `check_update`：是否在程序退出前检查更新。（布尔值，默认：`false`）
 + `menus` 导航栏菜单
   - `name`：导航栏上显示的名称。（字符串）
   - `link`：要跳转到的页面链接。（字符串）
@@ -57,9 +59,10 @@ npm install hexo-theme-pure
   - `clientSecret`: 你的 GitHub Oauth App Client Secret 。
   - `repository`: 你的 GitHub 评论仓库。
   - `owner`: 你的 GitHub 用户名。
-+ `google_analytics`：谷歌站点统计设置
-  - `enable`：是否开启谷歌站点统计。（布尔值，默认：`false`）
-  - `id`：谷歌站点统计 ID 。
++ `web_analytics`：站点统计设置
+  - `enable`：是否开启站点统计。（布尔值，默认：`false`）
+  - `google`：谷歌站点统计跟踪 ID 。
+  - `baidu`：百度站点统计 ID 。
 + `footer`：页脚显示的内容。
 + `friends`：友情链接
   - `name`：站点名称。

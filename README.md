@@ -41,6 +41,8 @@ npm install hexo-theme-pure --save
 + `favicon`: Site logo displayed in browser tabs and bookmarks. (String, default: `/favicon.ico`)
 + `avatar`: Site logo displayed on the header. (String, default: `/favicon.png`)
 + `katex`: Whether to load [KaTeX](https://katex.org) CSS. (Boolean, default: `false`)
++ `force_https`: Mandatory HTTPS. (Boolean, default: `false`)
++ `check_update`: Check update before exit. (Boolean, default: `false`)
 + `menus` (Array)
   - `name`: The name displayed on the navigation bar. (String)
   - `link`: The link of the page to jump to. (String)
@@ -57,9 +59,10 @@ npm install hexo-theme-pure --save
   - `clientSecret`:  Your GitHub oauth app client secret
   - `repository`: Your GitHub comment repository
   - `owner`: Your GitHub username
-+ `google_analytics`: Google Analytics Settings
-  - `enable`: Whether to enable Google Analytics. (Boolean, default: `false`)
-  - `id`: Google Analytics tracker id.
++ `web_analytics`: Web Analytics Settings
+  - `enable`: Whether to enable Web Analytics. (Boolean, default: `false`)
+  - `google`: Google Analytics tracker id.
+  - `baidu`: Baidu Analytics id.
 + `footer`: The content displayed in the footer.
 + `friends`: Friends (Array)
   - `name`: The name displayed on the friends list.
