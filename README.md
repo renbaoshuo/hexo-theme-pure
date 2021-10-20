@@ -20,11 +20,20 @@ English | [简体中文](/README.zh_CN.md)
 
 ## Installation
 
+### Install via GitHub
+
 You need to switch to the directory where the site is located before performing the following operations.
 
 ```bash
 npm install hexo-renderer-ejs hexo-renderer-less --save
 git clone https://github.com/renbaoshuo/hexo-theme-pure.git themes/pure
+```
+
+### Install via NPM
+
+```bash
+npm install hexo-theme-pure --save
+# or use yarn: yard add hexo-theme-pure
 ```
 
 ## Settings

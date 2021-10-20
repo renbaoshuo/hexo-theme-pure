@@ -20,11 +20,20 @@
 
 ## 安装
 
+### 通过 GitHub 安装
+
 您需要先切换到站点所在目录，然后才能进行以下操作。
 
 ```bash
 npm install hexo-renderer-ejs hexo-renderer-less --save
 git clone https://github.com/renbaoshuo/hexo-theme-pure.git themes/pure
+```
+
+### 通过 NPM 安装
+
+```bash
+npm install hexo-theme-pure
+# 或者使用 yarn：yarn add hexo-theme-pure
 ```
 
 ## 设置
