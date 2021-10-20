@@ -24,9 +24,10 @@ gitalk:
   clientSecret: 'Your Client Secret here'
   repository: 'Your Comment Repository here'
   owner: 'Your github username here'
-google_analytics:
+web_analytics:
   enable: false
-  id: UA-xxxxxxxxx-x
+  google: UA-12345678-1
+  baidu: 12345678
 footer: |
   Footer HTML
 friends:
