@@ -47,6 +47,8 @@ npm install hexo-theme-pure --save
   - `name`: The name displayed on the navigation bar. (String)
   - `link`: The link of the page to jump to. (String)
   - `target`: The [target](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a#attr-target) of the link. (String, `_self` or `_blank`, default: `_self`)
++ `post`: Post settings
+  - `feature`: display post image in post list (needs to set `feature` in post, Boolean, default: `true`)
 + `disqus`: DisqusJS Settings
   - `enable`: Whether to enable DisqusJS. (Boolean, default: `false`)
   - `shortname`: The shortname of the Disqus site.

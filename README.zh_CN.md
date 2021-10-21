@@ -47,6 +47,8 @@ npm install hexo-theme-pure
   - `name`：导航栏上显示的名称。（字符串）
   - `link`：要跳转到的页面链接。（字符串）
   - `target`：链接的 [target](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a#attr-target) 属性值。（字符串， `_self` 或 `_blank`，默认：`_self`）
++ `post`：文章设置
+  - `feature`：在文章列表中显示文章头图（需要在文章中指定 `feature` ，布尔值，默认：`false`）
 + `disqus`：DisqusJS 设置
   - `enable`：是否开启 DisqusJS。（布尔值，默认： `false`）
   - `shortname`：站点在 Disqus 中的 shortname 。

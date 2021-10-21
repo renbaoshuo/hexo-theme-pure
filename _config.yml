@@ -13,6 +13,8 @@ menus:
     link: /tags/
   - name: 友链
     link: /friends/
+post:
+  feature: true
 disqus:
   enable: false
   shortname: 'Your shortname here'

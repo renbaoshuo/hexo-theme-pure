@@ -24,6 +24,11 @@
                         </span>
                     </div>
                 </div>
+                <% if (theme.post.feature && post.feature) { %>
+                    <a href="<%= url_for(post.path) %>" class="post-feature-image"
+                        style="background-image: url('<%= post.feature %>');">
+                    </a>
+                <% } %>
             </article>
         <% }); %>
     </div>
