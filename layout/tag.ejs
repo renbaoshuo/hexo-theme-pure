@@ -30,3 +30,12 @@
         <% }); %>
     </div>
 </div>
+
+<div class="pagination-container">
+    <% if (page.prev) { %>
+        <a href="<%= url_for(page.prev_link) %>" class="prev-page gt-a-link">上一页</a>
+    <% } %>
+    <% if (page.next) { %>
+        <a href="<%= url_for(page.next_link) %>" class="prev-page gt-a-link">下一页</a>
+    <% } %>
+</div>
