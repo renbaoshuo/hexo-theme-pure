@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
+    <a class="navbar-brand" href="<%- url_for('/') %>">
         <img class="user-avatar" src="<%- url_for(theme.avatar) %>" alt="头像">
         <div class="site-name gt-c-content-color-first">
             <%= config.title %>
         </div>
-    </div>
+    </a>
     <button aria-label="Navbar Toggler" class="navbar-toggler" type="button" id="changeNavbar">
         <i class="gt-c-content-color-first" style="font-size: 18px;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18px" fill="currentColor">
