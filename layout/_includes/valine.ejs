@@ -1,0 +1,15 @@
+<% if (theme.valine.enable) { %>
+    <script src="https://cdn.jsdelivr.net/npm/valine@1.4.16/dist/Valine.min.js"></script>
+
+    <div id="vcomments"></div>
+
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: '<%= theme.valine.appId %>',
+            appKey: '<%= theme.valine.appKey %>',
+            placeholder: '<%= theme.valine.placeholder %>',
+            pageSize: '<%= theme.valine.pageSize %>'
+        });
+    </script>
+<% } %>
