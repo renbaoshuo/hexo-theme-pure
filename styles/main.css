@@ -780,6 +780,24 @@ hr {
 #dsqjs {
   font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, opensans, Optima, 'Microsoft Yahei', sans-serif;
 }
+#gitalk-container {
+  width: 80%;
+  max-width: 1000px;
+}
+@media (max-width: 992px) {
+  #gitalk-container {
+    width: 100%;
+  }
+}
+#vcomments {
+  width: 80%;
+  max-width: 1000px;
+}
+@media (max-width: 992px) {
+  #vcomments {
+    width: 100%;
+  }
+}
 .hljs {
   display: block;
   overflow-x: auto;
