@@ -15,7 +15,6 @@ English | [简体中文](/README.zh_CN.md)
 
 ## Demo
 
-+ [Baoshuo's Blog](https://blog.baoshuo.ren) (Modified version)
 + [Hexo Theme Unit Test of Theme Pure](https://renbaoshuo.github.io/hexo-theme-pure)
 
 ## Installation
