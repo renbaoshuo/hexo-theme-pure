@@ -27,6 +27,12 @@ gitalk:
   clientSecret: 'Your Client Secret here'
   repository: 'Your Comment Repository here'
   owner: 'Your github username here'
+valine:
+  enable: false
+  appId: 'Your appID here'
+  appKey: 'Your appKey here'
+  placeholder: 'Your placeholder here'
+  pageSize: 10
 web_analytics:
   enable: false
   google: UA-12345678-1
