@@ -44,6 +44,7 @@ jobs:
       - name: Generate Site Files
         run: hexo g
       - name: Deploy
+        if: ${{ github.event_name != 'pull_request' }}
         uses: peaceiris/actions-gh-pages@v2
         env:
           PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
