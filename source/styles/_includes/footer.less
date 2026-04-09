@@ -17,3 +17,100 @@
         display: none;
     }
 }
+
+.fab {
+    position: fixed;
+    bottom: 3rem;
+    right: 1.5rem;
+    contain: layout;
+
+    .fab-btn {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        align-items: center;
+        margin-top: 0.5rem;
+        font-size: 0.75rem;
+        background-color: var(--theme-second);
+        display: flex;
+        padding: 1rem;
+        box-shadow: 0 0.3rem 0.5rem rgba(48, 55, 66, 15%);
+        border: none;
+        border-radius: 0.5rem;
+        line-height: 1;
+        color: var(--content-first);
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: var(--border);
+        }
+    }
+}
+
+.post-toc {
+    display: none;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 1.5rem;
+    z-index: 100;
+    background: var(--theme-first);
+    box-shadow: 0 0.3rem 0.5rem rgba(48, 55, 66, 15%);
+    border-radius: 5px;
+    max-height: calc(91vh - 5rem);
+
+    @media (max-width: 1023px) {
+        left: 0;
+        right: 0;
+        margin: 1rem;
+    }
+
+    @media (min-width: 1000px) {
+        width: 400px;
+    }
+
+    &.active {
+        display: block;
+    }
+
+    .toc-label {
+        font-weight: bold;
+        padding-bottom: 0.75rem;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            padding: 0 0 0 0.5rem;
+            color: var(--content-first) !important;
+        }
+    }
+
+    .toc {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: calc(91vh - 10rem);
+        padding: 0;
+
+        .toc-item {
+            list-style: none;
+
+            a {
+                display: flex;
+                padding: 0.5rem 0.75rem;
+                color: var(--content-first) !important;
+                transition: all 0.3s;
+
+                &:hover {
+                    background: var(--theme-second);
+                }
+            }
+        }
+
+        .toc-child {
+            border-left: 2px solid var(--border);
+            margin: 0.25rem 0.75rem;
+            padding-left: 0.75rem;
+        }
+    }
+}
